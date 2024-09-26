@@ -1,15 +1,15 @@
 'use client'
 
 import React from 'react'
-// import { Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import Image from "next/image";
 
 function Hero() {
     return (
         <div className='my-28 grid grid-cols-2'>
 
-            <main className="">
-                {/* <Fade> */}
+            <main className="space-y-5">
+                <Fade cascade>
 
                     <Image
                         className="dark:invert"
@@ -19,7 +19,6 @@ function Hero() {
                         height={38}
                         priority
                     />
-                {/* </Fade> */}
 
                 <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
                     <li className="mb-2">
@@ -31,6 +30,7 @@ function Hero() {
                     </li>
                     <li>Save and see your changes instantly.</li>
                 </ol>
+                </Fade>
 
                 <div className="flex gap-4 items-center flex-col sm:flex-row">
                     <a
