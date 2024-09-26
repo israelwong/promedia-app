@@ -3,6 +3,8 @@
 import React from 'react'
 import { Fade } from "react-awesome-reveal";
 import Image from "next/image";
+import { Button } from "@/components/ui/button"
+import Link from 'next/link';
 
 function Hero() {
     return (
@@ -31,6 +33,14 @@ function Hero() {
                     <li>Save and see your changes instantly.</li>
                 </ol>
                 </Fade>
+
+                <div>
+                    <Button className="">
+                        <Link href="/nosotros">
+                        Click
+                        </Link>
+                    </Button>
+                </div>
 
                 <div className="flex gap-4 items-center flex-col sm:flex-row">
                     <a
