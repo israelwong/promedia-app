@@ -2,11 +2,13 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-// import { Menu, X } from 'lucide-react'
+import { Menu, X, ChevronRight, CircleUser } from 'lucide-react'
+
 import Image from 'next/image'
-import { roboto } from '../fonts'
+
 
 export default function Navbar() {
+
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeItem, setActiveItem] = useState('/')
 
@@ -33,8 +35,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex flex-row items-center">
             <Link href="/" className="text-2xl font-bold text-gray-800 flex items-center" onClick={() => handleLinkClick('/')}>
-              <Image src="https://sfsjdyuwttrcgchbsxim.supabase.co/storage/v1/object/public/ProMedia/favicon_white.svg" alt="ProMedia" width={120} height={40} className="block h-8 w-auto" />
-              <h1 className={`ml-2 ${roboto.className}`}>ProMedia</h1>
+              <Image src="https://sfsjdyuwttrcgchbsxim.supabase.co/storage/v1/object/public/ProMedia/logo_fullcolor.svg" alt="ProMedia" width={120} height={30} className="block h-5 md:h-8 w-auto" />
             </Link>
           </div>
 
@@ -45,12 +46,15 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-3 py-2 rounded-md text-sm font-medium ${activeItem === link.href ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
+                  className={`px-3 py-2 rounded-md ${activeItem === link.href ? 'text-cyan-700 bg-slate-900' : 'text-gray-600 hover:text-gray-600'}`}
                   onClick={() => handleLinkClick(link.href)}
                 >
                   {link.label}
                 </Link>
               ))}
+              <Link href="/contacto" className='pt-2 text-cyan-900'>
+                <CircleUser className="h-6 w-6" />
+              </Link>
             </div>
           </div>
 
@@ -58,13 +62,13 @@ export default function Navbar() {
           <div className="sm:hidden flex items-center">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              className="inline-flex items-center justify-center p-2"
             >
               <span className="sr-only">Abrir menú principal</span>
               {isMenuOpen ? (
-              <p>x</p>
+              <p><X/></p>
               ) : (
-                <p>Abrir</p>
+                <p><Menu /></p>
               )}
             </button>
           </div>
@@ -79,12 +83,19 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`block px-3 py-2 rounded-md text-base font-medium ${activeItem === link.href ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
+                className={`block px-3 py-2 rounded-md text-base font-medium ${activeItem === link.href ? 'text-cyan-600' : 'text-gray-600 hover:text-gray-600'}`}
                 onClick={() => handleLinkClick(link.href)}
               >
-                {link.label}
+                <div className="flex items-center space-x-2">
+                <ChevronRight/> {link.label}
+                </div>
               </Link>
             ))}
+            <Link href="/contacto" className='pt-2'>
+              <div className='flex text-center items-center mx-auto p-3 bg-cyan-800 rounded-md my-2 justify-center'>
+                Iniciar sesión
+              </div>
+            </Link>
           </div>
         </div>
       )}
