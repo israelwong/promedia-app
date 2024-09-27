@@ -5,18 +5,23 @@ import React from "react";
 function HookServicios() {
   return (
     <div>
-      <div className="mx-auto max-w-screen-sm md:pt-0 pt-5 md:pb-12 pb-2">
-        <Fade>
-          <h2
-            className="font-Bebas-Neue text-center md:text-4xl 
-          text-3xl text-gray-400 px-16"
-          >
-            Te presentamos{" "}
-            <span className="underline text-yellow-900">agunos servicios</span>{" "}
-            que creemos que sumarán al éxito de tu proyecto
+      <Fade>
+        <div
+          className="
+        mx-auto max-w-screen-sm 
+        md:pt-0 pt-5 
+        md:pb-12 pb-2 
+        text-center 
+        font-Bebas-Neue"
+        >
+          <h2 className="text-center md:text-6xl text-3xl text-cyan-900 px-16">
+            nuestros servicios
           </h2>
-        </Fade>
-      </div>
+          <p className="text-4xl px-14 text-gray-400">
+            Estamos seguros de que sumarán al éxito de tu proyecto
+          </p>
+        </div>
+      </Fade>
     </div>
   );
 }

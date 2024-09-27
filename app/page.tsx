@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Hero from "@/app/ui/main/home/Hero";
+// import Hero from "@/app/ui/main/home/Hero";
 import Multimedia from "./ui/main/home/Multimedia";
 import HookServicios from "./ui/main/home/HookServicios";
 import Marketing from "./ui/main/home/Marketing";
-import Landing from "./ui/main/home/Landing";
+import Websites from "./ui/main/home/Websites";
 import Pasarela from "./ui/main/home/Pasarela";
 import LogosClientes from "./ui/main/LogosClientes";
 
@@ -16,13 +16,13 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="mx-auto">
-      <section>
+      {/* <section>
         <Hero />
-      </section>
+      </section> */}
 
-<section>
-        <HookServicios />
-</section>
+      <section>
+              <HookServicios />
+      </section>
 
       <section>
         <Multimedia />
@@ -33,7 +33,7 @@ export default function Home() {
       </section>
 
       <section>
-        <Landing />
+        <Websites />
       </section>
 
       <section>

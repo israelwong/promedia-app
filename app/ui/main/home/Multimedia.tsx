@@ -42,7 +42,7 @@ function Multimedia() {
                 <VideoPlayer
                   src={"https://sfsjdyuwttrcgchbsxim.supabase.co/storage/v1/object/public/ProMedia/videos/clips/shooting.webm"}
                 />
-                <ul className="text-gray-500 mt-3">
+                <ul className="text-gray-500 mt-3 text-sm">
                   <li><i className="fas fa-check"></i> Alta resolución</li>
                   <li><i className="fas fa-check"></i> Nitidez</li>
                   <li><i className="fas fa-check"></i> Colores vividos</li>
@@ -55,7 +55,7 @@ function Multimedia() {
                   Presenta imágenes persuasivas y aspiracionales a tu nicho de mercado
                 </p>
 
-                <BtnSeccion id={'btn_shooting'} title={'Ver más'} href={'servicios/fotografia'} bordercolor={'border-purple-900'} />
+                <BtnSeccion id={'btn_shooting'} title={'Ver más'} href={'/servicios'} bordercolor={'border-purple-900'} />
 
               </div>
 
@@ -90,7 +90,7 @@ function Multimedia() {
                   Interés instantáneo a través reels profesionales de alta calidad
                 </p>
 
-                <BtnSeccion id={'btn_video'} title={'Ver más'} href={'servicios/video'} bordercolor={'border-purple-900'} />
+                <BtnSeccion id={'btn_video'} title={'Ver más'} href={'servicios'} bordercolor={'border-purple-900'} />
 
               </div>
 

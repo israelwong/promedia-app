@@ -184,13 +184,14 @@ function LogosClientes() {
     return (
         <div className="pb-10 mx-auto text-center md:max-w-screen-lg max-w-screen-sm md:px-0 px-8">
             
+            <div className="md:max-w-screen-sm mx-auto">
             <h1 className="font-Bebas-Neue text-5xl text-gray-700">
                 Nuestros clientes
             </h1>
             <p className="md:text-2xl text-xl font-extralight text-gray-400 pb-5">
-                Gracias por confiar en nosotros para crear proyectos multimedia,
-                comerciales, sitios web y diseño de campañas
+                Gracias a todos nuestros clientes por confiar en nosotros para crear sus proyectos digitales
             </p>
+            </div>
 
             <Fade cascade duration={200} damping={.1}>
 

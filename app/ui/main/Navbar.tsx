@@ -24,8 +24,8 @@ export default function Navbar() {
   const links = [
     { href: '/', label: 'Inicio' },
     { href: '/nosotros', label: 'Nosotros' },
-    { href: '/servicios', label: 'Servicios' },
     { href: '/clientes', label: 'Clientes' },
+    { href: '/servicios', label: 'Servicios' },
     { href: '/contacto', label: 'Contacto' },
   ]
 
