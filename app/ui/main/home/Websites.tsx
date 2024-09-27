@@ -27,7 +27,7 @@ function Landing() {
         <div className="md:p-0 p-3">
           <div
             className="mx-auto
-      max-w-screen-lg
+      md:max-w-screen-lg max-w-sm
       md:my-10 mb-0
       md:p-10 p-5
       bg-orange-950/20

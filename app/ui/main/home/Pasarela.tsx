@@ -8,7 +8,8 @@ function Pasarela() {
         <Fade>
     <section className="md:p-0 p-3">
       <div
-        className="mx-auto max-w-screen-lg
+        className="mx-auto
+        md:max-w-screen-lg max-w-sm
     md:my-10 mb-5
     pt-10 bg-blue-950/20 rounded-md border ring-red-400 border-blue-800"
       >

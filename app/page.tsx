@@ -21,7 +21,7 @@ export default function Home() {
       </section> */}
 
       <section>
-              <HookServicios />
+        <HookServicios />
       </section>
 
       <section>

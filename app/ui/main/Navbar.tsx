@@ -26,7 +26,7 @@ export default function Navbar() {
     { href: '/nosotros', label: 'Nosotros' },
     { href: '/clientes', label: 'Clientes' },
     { href: '/servicios', label: 'Servicios' },
-    { href: '/contacto', label: 'Contacto' },
+    // { href: '/contacto', label: 'Contacto' },
   ]
 
   return (
@@ -52,9 +52,9 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <Link href="/contacto" className='pt-2 text-cyan-900'>
+              {/* <Link href="/dashboard" className='pt-2 text-cyan-900'>
                 <CircleUser className="h-6 w-6" />
-              </Link>
+              </Link> */}
             </div>
           </div>
 
@@ -91,11 +91,13 @@ export default function Navbar() {
                 </div>
               </Link>
             ))}
-            <Link href="/contacto" className='pt-2'>
+            {/* <Link href="/dashboard" className='pt-2'
+              onClick={(e) => handleLinkClick(e.currentTarget.pathname)}
+            >
               <div className='flex text-center items-center mx-auto p-3 bg-cyan-800 rounded-md my-2 justify-center'>
                 Iniciar sesión
               </div>
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}

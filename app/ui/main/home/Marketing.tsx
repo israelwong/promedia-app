@@ -11,10 +11,13 @@ function Marketing() {
 <Fade>
     <section className="md:p-0 p-3">
       <div
-        className="mx-auto max-w-screen-lg
-    mb:my-10 mb-0
+        className="
+        mx-auto 
+        md:max-w-screen-lg max-w-sm
+      mb:my-10 mb-0
     bg-green-950/20 rounded-md border ring-red-400 border-green-500
-    md:p-10 p-5"
+    md:p-10 p-5
+    "
       >
         <h1
           className="mx-auto text-center
