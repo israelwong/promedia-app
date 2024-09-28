@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import BtnCerrarVentana from '@/app/ui/main/BtnCerrarVentana';
 import BtnWaServicios from '@/app/ui/main/servicios/BtnWaServicios';
 import { Flame, Flag, MessageCircleMore, Heart } from 'lucide-react';
+import Galeria from '@/app/ui/main/Galeria';
 
 export const metadata: Metadata = {
     title: 'Fotografía corporativa',
@@ -50,7 +51,7 @@ function page() {
                     md:bg-transparent bg-yellow-900/20
                     md:text-right text-center
                     ">
-                        "Comunica a clientes potenciales y socios comerciales tu identidad de la marca a través de fotografías de tu organización."
+                        &quot;Comunica a clientes potenciales y socios comerciales tu identidad de la marca a través de fotografías de tu organización.&quot;
                     </p>
 
                     <div className="md:text-right text-center md:pb-10 pb-0">
@@ -106,6 +107,13 @@ function page() {
                     </div>
                 </div>
             </div>
+
+
+            <Galeria
+                ruta={ruta}
+                num_fotos={num_fotos}
+                rowHeight={rowHeight}
+            />
 
             <BtnCerrarVentana
                 url={'/servicios'}

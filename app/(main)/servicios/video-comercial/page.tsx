@@ -23,7 +23,7 @@ function page() {
                     Video promocional
                 </h1>
                 <p className="md:text-3xl text-2xl text-gray-500 md:max-w-screen-sm mx-auto md:px-0 px-10">
-                    Hazte presente en todas las plataformas y canales digitales
+                &quot;Hazte presente en todas las plataformas y canales digitales&quot;
                 </p>
             </div>
 
@@ -50,8 +50,8 @@ function page() {
                 md:bg-transparent bg-yellow-900/20
                 md:mt-10
                 ">
-                        "Genera interés instantáneo a través de un reel de alto impacto de hasta
-                        60 segundos que muestre por que eres su mejor opción"
+                        &quote;Genera interés instantáneo a través de un reel de alto impacto de hasta
+                        60 segundos que muestre por que eres su mejor opción&quote;
                     </p>
 
                     <BtnWaServicios

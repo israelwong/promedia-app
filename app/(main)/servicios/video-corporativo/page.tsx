@@ -20,7 +20,7 @@ function page() {
                     Video corporativo
                 </h1>
                 <p className="md:text-3xl text-2xl text-gray-500 md:max-w-screen-sm mx-auto md:px-0 px-10">
-                    Conoce algunos de los muchos beneficios de tener un video corporativo
+                &quot;Conoce algunos de los muchos beneficios de tener un video corporativo&quot;
                 </p>
             </div>
 
@@ -43,8 +43,8 @@ function page() {
                 mb-12
                 "
                     >
-                        "Consolida la identidad de tu marca e impresiona a tus clientes y
-                        socios comerciales."
+                        &quote;Consolida la identidad de tu marca e impresiona a tus clientes y
+                        socios comerciales.&quote;
                     </p>
 
                     <BtnWaServicios

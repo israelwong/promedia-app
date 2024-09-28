@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import BtnCerrarVentana from '@/app/ui/main/BtnCerrarVentana';
 import BtnWaServicios from '@/app/ui/main/servicios/BtnWaServicios';
 import { Rocket, Check, UsersRound, Megaphone, Star } from 'lucide-react';
+import Galeria from '@/app/ui/main/Galeria';
 
 export const metadata: Metadata = {
     title: 'Fotografía corporativa',
@@ -13,8 +14,8 @@ export const metadata: Metadata = {
 function page() {
 
     const ruta = "https://sfsjdyuwttrcgchbsxim.supabase.co/storage/v1/object/public/ProMedia/galeria/Comercial/"
-    const num_fotos=23
-    const rowHeight=250
+    const num_fotos = 23
+    const rowHeight = 250
 
     const color = "#155e75"
     const dataBtnWa = {
@@ -50,7 +51,7 @@ function page() {
                     md:bg-transparent bg-yellow-900/20
                     md:text-right text-center
                     ">
-                        "Comunica a clientes potenciales y socios comerciales tu identidad de la marca a través de fotografías de tu organización."
+                        &quot;Comunica a clientes potenciales y socios comerciales tu identidad de la marca a través de fotografías de tu organización.&quot;
                     </p>
 
                     <div className="md:text-right text-center md:pb-10 pb-0">
@@ -63,55 +64,62 @@ function page() {
                 </div>
 
                 <div className="md:pt-10 pt-0">
-                <div className="grid md:grid-cols-2 md:gap-2 gap-5 md:p-0 p-5 mt-8 md:mt-0 ">
+                    <div className="grid md:grid-cols-2 md:gap-2 gap-5 md:p-0 p-5 mt-8 md:mt-0 ">
 
-                    <div className="p-5 border-4 border-gray-800 rounded-md bg-slate-500/10">
-                      
-                    <Rocket color={color} size={48} className='pb-3' />
-                      
-                        <div>
-                            <h3 className="text-3xl font-Bebas-Neue tracking-wid">Profesionalismo</h3>
-                            <p className="text-gray-400">Refleja el profesionalismo y la calidad de tu negocio.</p>
+                        <div className="p-5 border-4 border-gray-800 rounded-md bg-slate-500/10">
+
+                            <Rocket color={color} size={48} className='pb-3' />
+
+                            <div>
+                                <h3 className="text-3xl font-Bebas-Neue tracking-wid">Profesionalismo</h3>
+                                <p className="text-gray-400">Refleja el profesionalismo y la calidad de tu negocio.</p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div className="p-5 border-4 border-gray-800 rounded-md bg-slate-500/10">
-                    <Check  color={color} size={48} className='pb-3'/>
-                        <div>
-                            <h3 className="text-3xl font-Bebas-Neue tracking-wid">Confianza</h3>
-                            <p className="text-gray-400">Brinda a tus prospectos y clientes la confianza que los motive a comprar</p>
+
+                        <div className="p-5 border-4 border-gray-800 rounded-md bg-slate-500/10">
+                            <Check color={color} size={48} className='pb-3' />
+                            <div>
+                                <h3 className="text-3xl font-Bebas-Neue tracking-wid">Confianza</h3>
+                                <p className="text-gray-400">Brinda a tus prospectos y clientes la confianza que los motive a comprar</p>
+                            </div>
                         </div>
-                    </div>
-        
-                    <div className="p-5 border-4 border-gray-800 rounded-md bg-slate-500/10">
-       
-                    <UsersRound color={color} size={48} className='pb-3' />
-                        <div>
-                            <h3 className="text-3xl font-Bebas-Neue tracking-wid">Diferenciación</h3>
-                            <p className="text-gray-400">Destaca a tu negocio de entre la competencia</p>
+
+                        <div className="p-5 border-4 border-gray-800 rounded-md bg-slate-500/10">
+
+                            <UsersRound color={color} size={48} className='pb-3' />
+                            <div>
+                                <h3 className="text-3xl font-Bebas-Neue tracking-wid">Diferenciación</h3>
+                                <p className="text-gray-400">Destaca a tu negocio de entre la competencia</p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div className="p-5 border-4 border-gray-800 rounded-md bg-slate-500/10">
-                    <Megaphone  color={color} size={48} className='pb-3'/>
-                        <div>
-                            <h3 className="text-3xl font-Bebas-Neue tracking-wid">Atención</h3>
-                            <p className="text-gray-400">Resalta las características y beneficios de manera atractiva y persuasiva</p>
+
+                        <div className="p-5 border-4 border-gray-800 rounded-md bg-slate-500/10">
+                            <Megaphone color={color} size={48} className='pb-3' />
+                            <div>
+                                <h3 className="text-3xl font-Bebas-Neue tracking-wid">Atención</h3>
+                                <p className="text-gray-400">Resalta las características y beneficios de manera atractiva y persuasiva</p>
+                            </div>
                         </div>
-                    </div>
-        
-                    <div className="p-5 border-4 border-gray-800 rounded-md bg-slate-500/10">
-                    <Star  color={color} size={48} className='pb-3'/>
-                        <div>
-                            <h3 className="text-3xl font-Bebas-Neue tracking-wid">Reconocimiento</h3>
-                            <p className="text-gray-400">Impulsa el reconocimiento de tu marca.</p>
+
+                        <div className="p-5 border-4 border-gray-800 rounded-md bg-slate-500/10">
+                            <Star color={color} size={48} className='pb-3' />
+                            <div>
+                                <h3 className="text-3xl font-Bebas-Neue tracking-wid">Reconocimiento</h3>
+                                <p className="text-gray-400">Impulsa el reconocimiento de tu marca.</p>
+                            </div>
                         </div>
+
                     </div>
-        
                 </div>
+
             </div>
-               
-            </div>
+
+            <Galeria
+                ruta={ruta}
+                num_fotos={num_fotos}
+                rowHeight={rowHeight}
+            />
+
 
             <BtnCerrarVentana
                 url={'/servicios'}

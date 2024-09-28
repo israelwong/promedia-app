@@ -25,7 +25,7 @@ function page() {
                     Video social
                 </h1>
                 <p className="md:text-3xl text-2xl text-gray-500 md:max-w-screen-sm mx-auto md:px-0 px-10">
-                    Producimos videos de calidad para redes sociales que van de los 30 a 60 seg
+                &quot;Producimos videos de calidad para redes sociales que van de los 30 a 60 seg&quot;
                 </p>
             </div>
 
@@ -44,7 +44,7 @@ function page() {
                 md:bg-transparent bg-yellow-900/20
                 md:text-right text-center
                 ">
-                        "Genera interés a través de un reel atractivo que capte la atención de tu audiencia"
+                        &quote;Genera interés a través de un reel atractivo que capte la atención de tu audiencia&quote;
                     </p>
 
                     <div className="md:text-right text-center md:pb-10 pb-0">

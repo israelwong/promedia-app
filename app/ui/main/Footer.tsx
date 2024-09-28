@@ -35,7 +35,7 @@ export default function Footer() {
             <span className="sr-only">ProMedia México</span>
             <img src="https://sfsjdyuwttrcgchbsxim.supabase.co/storage/v1/object/public/ProMedia/logo_dark_gray.svg" alt="ProMedia" width={120} height={30} className="block h-5 md:h-8 w-auto" />
           </Link>
-          <p className="mt-2 text-sm text-muted-foreground pr-12 mt-5">
+          <p className="text-sm text-muted-foreground pr-12 mt-5">
             Ayudamos a crear una oferta comercial para tu empresa a través de la tecnología y la innovación.
           </p>
         </div>

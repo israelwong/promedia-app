@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X, ChevronRight, CircleUser } from 'lucide-react'
+import { Menu, X, ChevronRight } from 'lucide-react'
 
 import Image from 'next/image'
 

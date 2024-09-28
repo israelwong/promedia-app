@@ -23,7 +23,7 @@ function page() {
                     Creamos y conectamos <span className="animate-pulse text-yellow-600">todo</span> de punta a punta
                 </h1>
                 <h4 className="md:text-2xl text-xl md:px-0 px-5 max-w-screen-md mx-auto text-gray-400 font-extralight">
-                    Diseñamos embudos, producimos multimedia e integramos tecnologías de última generación para automatizar procesos y maximizar resultados.
+                &quot;Diseñamos embudos, producimos multimedia e integramos tecnologías de última generación para automatizar procesos y maximizar resultados.&quot;
                 </h4>
             </div>
 
