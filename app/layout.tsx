@@ -3,6 +3,9 @@ import Navbar from "@/app/ui/main/Navbar";
 import Footer from "@/app/ui/main/Footer";
 import { ThemeProvider } from "@/app/ui/theme-provider";
 import Script from 'next/script';
+import { GoogleTagManager } from '@next/third-parties/google'
+
+
 
 import "@/app/globals.css";
 
@@ -30,7 +33,9 @@ export default function RootLayout({
         type="image/<generated>"
         sizes="<generated>"
         />
+
         <Script src="https://kit.fontawesome.com/74d1405387.js"/>
+
       </head>
 
       <body className={`antialiased bg-black`}>
@@ -40,6 +45,7 @@ export default function RootLayout({
           <Footer />
         </ThemeProvider>
       </body>
+      <GoogleTagManager gtmId="GTM-M9ZT7HQ9" />
     </html>
   );
 }
