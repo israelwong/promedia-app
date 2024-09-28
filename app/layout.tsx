@@ -23,6 +23,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const GTM = "${GTM}";
+
   return (
     <html lang="es" className="bg-black">
 
@@ -38,14 +41,18 @@ export default function RootLayout({
 
       </head>
 
+      <GoogleTagManager gtmId={GTM} />
       <body className={`antialiased bg-black`}>
+
+        <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${GTM}`}
+        height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
+
         <ThemeProvider>
           <Navbar />
           {children}
           <Footer />
         </ThemeProvider>
       </body>
-      <GoogleTagManager gtmId={"GTM-M9ZT7HQ9"} />
     </html>
   );
 }
