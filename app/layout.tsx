@@ -4,9 +4,7 @@ import Footer from "@/app/ui/main/Footer";
 import { ThemeProvider } from "@/app/ui/theme-provider";
 import Script from 'next/script';
 import "@/app/globals.css";
-import GTMScript from './GTMScript'; // Ajusta la ruta según sea necesario
-
-
+import  {GoogleTagManager} from '@next/third-parties/google';
 
 export const metadata: Metadata = {
   title: {
@@ -39,14 +37,13 @@ export default function RootLayout({
 
       </head>
 
-      {/* <GoogleTagManager gtmId="GTM-M9ZT7HQ9" /> */}
       <body className={`antialiased bg-black`}>
-        <GTMScript />
         <ThemeProvider>
           <Navbar />
           {children}
           <Footer />
         </ThemeProvider>
+        <GoogleTagManager gtmId="GTM-M9ZT7HQ9" />
       </body>
     </html>
   );
