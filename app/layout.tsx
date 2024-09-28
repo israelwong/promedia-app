@@ -3,11 +3,9 @@ import Navbar from "@/app/ui/main/Navbar";
 import Footer from "@/app/ui/main/Footer";
 import { ThemeProvider } from "@/app/ui/theme-provider";
 import Script from 'next/script';
-import { GoogleTagManager } from '@next/third-parties/google'
-
-
-
 import "@/app/globals.css";
+
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   title: {
@@ -24,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const GTM = "${GTM}";
+  const GTM = "GTM-M9ZT7HQ9";
 
   return (
     <html lang="es" className="bg-black">
