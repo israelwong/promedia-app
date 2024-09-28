@@ -43,8 +43,8 @@ function page() {
                 mb-12
                 "
                     >
-                        &quote;Consolida la identidad de tu marca e impresiona a tus clientes y
-                        socios comerciales.&quote;
+                        &quot;Consolida la identidad de tu marca e impresiona a tus clientes y
+                        socios comerciales.&quot;
                     </p>
 
                     <BtnWaServicios

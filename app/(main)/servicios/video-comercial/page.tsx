@@ -50,8 +50,8 @@ function page() {
                 md:bg-transparent bg-yellow-900/20
                 md:mt-10
                 ">
-                        &quote;Genera interés instantáneo a través de un reel de alto impacto de hasta
-                        60 segundos que muestre por que eres su mejor opción&quote;
+                        &quot;Genera interés instantáneo a través de un reel de alto impacto de hasta
+                        60 segundos que muestre por que eres su mejor opción&quot;
                     </p>
 
                     <BtnWaServicios

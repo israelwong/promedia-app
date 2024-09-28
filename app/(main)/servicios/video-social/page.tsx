@@ -44,7 +44,7 @@ function page() {
                 md:bg-transparent bg-yellow-900/20
                 md:text-right text-center
                 ">
-                        &quote;Genera interés a través de un reel atractivo que capte la atención de tu audiencia&quote;
+                        &quot;Genera interés a través de un reel atractivo que capte la atención de tu audiencia&quot;
                     </p>
 
                     <div className="md:text-right text-center md:pb-10 pb-0">
