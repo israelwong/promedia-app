@@ -5,7 +5,13 @@ import { ThemeProvider } from "@/app/ui/theme-provider";
 import Script from 'next/script';
 import "@/app/globals.css";
 
-import { GoogleTagManager } from '@next/third-parties/google'
+// import { GoogleTagManager } from '@next/third-parties/google'
+
+import TagManager from '@sooro-io/react-gtm-module'
+const tagManagerArgs = {gtmId: 'GTM-M9ZT7HQ9'}
+TagManager.initialize(tagManagerArgs)
+
+// end changes
 
 export const metadata: Metadata = {
   title: {
@@ -37,11 +43,11 @@ export default function RootLayout({
 
       </head>
 
-      <GoogleTagManager gtmId="GTM-M9ZT7HQ9" />
+      {/* <GoogleTagManager gtmId="GTM-M9ZT7HQ9" /> */}
       <body className={`antialiased bg-black`}>
 
-        <noscript><iframe src={"https://www.googletagmanager.com/ns.html?id=GTM-M9ZT7HQ9"}
-        height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
+        {/* <noscript><iframe src={"https://www.googletagmanager.com/ns.html?id=GTM-M9ZT7HQ9"}
+        height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript> */}
 
         <ThemeProvider>
           <Navbar />
