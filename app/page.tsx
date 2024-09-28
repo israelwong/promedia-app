@@ -21,7 +21,9 @@ export default function Home() {
       </section> */}
 
       <section>
+        <div className="mt-16 mb-8">
         <HookServicios />
+        </div>
       </section>
 
       <section>
