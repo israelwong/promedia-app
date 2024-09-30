@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 // import Hero from "@/app/ui/main/home/Hero";
 import Multimedia from "./ui/main/home/Multimedia";
-import HookServicios from "./ui/main/home/HookServicios";
+// import HookServicios from "./ui/main/home/HookServicios";
 import Marketing from "./ui/main/home/Marketing";
 import Websites from "./ui/main/home/Websites";
 import Pasarela from "./ui/main/home/Pasarela";
@@ -20,18 +20,18 @@ export default function Home() {
         <Hero />
       </section> */}
 
-      <section>
+      {/* <section>
         <div className="mt-16 mb-8">
         <HookServicios />
         </div>
-      </section>
+      </section> */}
 
       <section>
         <Multimedia />
       </section>
 
       <section>
-        <Marketing /> 
+        <Marketing />
       </section>
 
       <section>

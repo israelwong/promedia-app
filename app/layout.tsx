@@ -4,7 +4,9 @@ import Footer from "@/app/ui/main/Footer";
 import { ThemeProvider } from "@/app/ui/theme-provider";
 import Script from 'next/script';
 import "@/app/globals.css";
+
 import  {GoogleTagManager} from '@next/third-parties/google';
+
 
 export const metadata: Metadata = {
   title: {
