@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import Navbar from "@/app/ui/main/Navbar";
-import Footer from "@/app/ui/main/Footer";
-import { ThemeProvider } from "@/app/ui/theme-provider";
+// import Navbar from "@/app/ui/main/Navbar";
+// import Footer from "@/app/ui/main/Footer";
+// import { ThemeProvider } from "@/app/ui/theme-provider";
 import Script from 'next/script';
 import "@/app/globals.css";
 
-import  {GoogleTagManager} from '@next/third-parties/google';
+// import  {GoogleTagManager} from '@next/third-parties/google';
 
 
 export const metadata: Metadata = {
@@ -39,13 +39,13 @@ export default function RootLayout({
 
       </head>
 
-      <body className={`antialiased bg-black`}>
-        <ThemeProvider>
-          <Navbar />
+      <body className={`antialiased bg-black text-white`}>
+        {/* <ThemeProvider> */}
+          {/* <Navbar /> */}
           {children}
-          <Footer />
-        </ThemeProvider>
-        <GoogleTagManager gtmId="GTM-M9ZT7HQ9" />
+          {/* <Footer /> */}
+        {/* </ThemeProvider> */}
+        {/* <GoogleTagManager gtmId="GTM-M9ZT7HQ9" /> */}
       </body>
     </html>
   );

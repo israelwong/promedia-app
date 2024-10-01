@@ -1,6 +1,6 @@
 'use client'
 import { Fade } from "react-awesome-reveal";
-import BtnBorderSolid from "@/app/ui/main/BtnBorderSolid";
+import BtnBorderSolid from "../components/BtnBorderSolid";
 import {MoveRight} from 'lucide-react'
 
 

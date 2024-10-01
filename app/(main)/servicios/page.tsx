@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://promedia.mx/servicios'),
 };
 
-
 function page() {
   return (
     <div>

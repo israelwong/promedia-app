@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import VideoPlayer from "@/app/ui/main/VideoPlayer";
-import BtnWaServicios from "@/app/ui/main/servicios/BtnWaServicios";
+import VideoPlayer from "@/app/(main)/ui/components/VideoPlayer";
+import BtnWaServicios from "@/app/(main)/ui/servicios/BtnWaServicios";
 
 function CardServicio({
   title,

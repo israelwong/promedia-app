@@ -1,9 +1,9 @@
 import React from 'react'
 import type { Metadata } from "next";
-import BtnCerrarVentana from '@/app/ui/main/BtnCerrarVentana';
-import BtnWaServicios from '@/app/ui/main/servicios/BtnWaServicios';
+import BtnCerrarVentana from '@/app/(main)/ui/components/BtnCerrarVentana';
+import BtnWaServicios from '@/app/(main)/ui/servicios/BtnWaServicios';
+import Galeria from '@/app/(main)/ui/components/Galeria';
 import { Flame, Flag, MessageCircleMore, Heart } from 'lucide-react';
-import Galeria from '@/app/ui/main/Galeria';
 
 export const metadata: Metadata = {
     title: 'Fotografía corporativa',

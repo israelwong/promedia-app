@@ -1,5 +1,5 @@
 "use client";
-import CardServicio from "@/app/ui/main/servicios/CardServicio";
+import CardServicio from "../servicios/CardServicio";
 import { Fade } from "react-awesome-reveal";
 
 function Servicios() {

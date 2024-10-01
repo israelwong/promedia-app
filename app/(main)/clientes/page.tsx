@@ -1,8 +1,8 @@
 import React from 'react'
 import type { Metadata } from "next";
-import VideoPlayer from '@/app/ui/main/VideoPlayer';
-import LogosClientes from '@/app/ui/main/LogosClientes';
-import LogosClientesSlider from '@/app/ui/main/LogosClientesSlider';
+import VideoPlayer from '../ui/components/VideoPlayer';
+import LogosClientes from '../ui/components/LogosClientes';
+import LogosClientesSlider from '../ui/components/LogosClientesSlider';
 import {ChevronRight} from 'lucide-react';
 
 export const metadata: Metadata = {

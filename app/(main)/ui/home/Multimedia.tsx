@@ -3,8 +3,8 @@
 import { Slide } from "react-awesome-reveal";
 
 import React from 'react'
-import VideoPlayer from '@/app/ui/main/VideoPlayer';
-import BtnSeccion from '@/app/ui/main/BtnSeccion';
+import VideoPlayer from "../components/VideoPlayer";
+import BtnSeccion from '../components/BtnSeccion';
 
 
 function Multimedia() {

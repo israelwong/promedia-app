@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-// import Navbar from "@/app/ui/main/Navbar";
-// import Footer from "@/app/ui/main/Footer";
-// import { ThemeProvider } from "@/app/ui/theme-provider";
+// import Navbar from "@/app/main/ui/Navbar";
+import Navbar from "./ui/components/Navbar";
+import Footer from "./ui/components/Footer";
+import { ThemeProvider } from "./ui/theme-provider";
 import Script from 'next/script';
 import "@/app/globals.css";
 
@@ -40,11 +41,11 @@ export default function RootLayout({
       </head>
 
       <body className={`antialiased bg-black`}>
-        {/* <ThemeProvider> */}
-          {/* <Navbar /> */}
+        <ThemeProvider>
+          <Navbar />
           {children}
-          {/* <Footer /> */}
-        {/* </ThemeProvider> */}
+          <Footer />
+        </ThemeProvider>
         <GoogleTagManager gtmId="GTM-M9ZT7HQ9" />
       </body>
     </html>

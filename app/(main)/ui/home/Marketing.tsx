@@ -1,8 +1,8 @@
 'use client'  
 
 import { Fade } from "react-awesome-reveal";
-import BtnBorderSolid from "@/app/ui/main/BtnBorderSolid";
-import LogosPlataformas from "@/app/ui/main/LogosPlataformas";
+import BtnBorderSolid from "../components/BtnBorderSolid";
+import LogosPlataformas from "../components/LogosPlataformas";
 
 function Marketing() {
   return (
