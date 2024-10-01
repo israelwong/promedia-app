@@ -68,7 +68,7 @@ function Pasarela() {
                   <li className="px-3 bg-white md:p-10 p-10">
                     <Image
                       alt="Visa"
-                      src="https://sfsjdyuwttrcgchbsxim.supabase.co/storage/v1/object/public/ProMedia/logos_pasarela/visa.svg?t=2024-09-27T02%3A00%3A19.909Z"
+                      src="https://sfsjdyuwttrcgchbsxim.supabase.co/storage/v1/object/public/ProMedia/logos_pasarela/visa.svg"
                       className="md:h-16 h-12 w-fit object-fill mx-auto"
                       width={100}
                       height={100}
@@ -123,7 +123,7 @@ function Pasarela() {
                   <li className="px-3 bg-white md:p-10 p-10">
                     <Image
                       alt="SPEI"
-                      src="https://sfsjdyuwttrcgchbsxim.supabase.co/storage/v1/object/public/ProMedia/logos_pasarela/spei.svg?t=2024-09-27T02%3A00%3A10.655Z"
+                      src="https://sfsjdyuwttrcgchbsxim.supabase.co/storage/v1/object/public/ProMedia/logos_pasarela/spei.svg"
                       className="md:h-12 h-12 w-fit object-fill mx-auto"
                       width={100}
                       height={100}
