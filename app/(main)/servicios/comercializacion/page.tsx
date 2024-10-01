@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Metadata } from "next";
-import BtnCerrarVentana from '../../ui/components/BtnCerrarVentana';
-import Servicios from '../../ui/servicios/Servicios';
+import BtnCerrarVentana from '@/app/ui/components/BtnCerrarVentana';
+import Servicios from '@/app/ui/servicios/Servicios';
 
 export const metadata: Metadata = {
     title: 'Comercialización digital',

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 // import Navbar from "@/app/main/ui/Navbar";
-import Navbar from "./ui/components/Navbar";
-import Footer from "./ui/components/Footer";
-import { ThemeProvider } from "./ui/theme-provider";
+import Navbar from "@/app/ui/components/Navbar";
+import Footer from "@/app/ui/components/Footer";
+import { ThemeProvider } from "@/app/ui/theme-provider";
 import Script from 'next/script';
 import "@/app/globals.css";
 

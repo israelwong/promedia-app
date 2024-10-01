@@ -1,8 +1,8 @@
 
 import type { Metadata } from "next";
-import BtnWaServicios from "@/app/(main)/ui/servicios/BtnWaServicios";
-import VideoPlayer from "@/app/(main)/ui/components/VideoPlayer";
-import BtnCerrarVentana from "@/app/(main)/ui/components/BtnCerrarVentana";
+import BtnWaServicios from "@/app/ui/servicios/BtnWaServicios";
+import VideoPlayer from "@/app/ui/components/VideoPlayer";
+import BtnCerrarVentana from "@/app/ui/components/BtnCerrarVentana";
 import { Flame, Heart, ThumbsUp, HandHeart, Smartphone } from 'lucide-react';
 
 export const metadata: Metadata = {
