@@ -1,7 +1,7 @@
 import { getBusinessByName } from '@/lib/actions';
 import Template from '@/app/ui/landing/Template';
 import { generateMetadataFromBusiness } from '@/lib/perfil-metadata';
-import NoEncontrado from '@/app/ui/landing/NoEncontrado';
+import NotFoundLanding from '@/app/ui/landing/NotFoundLanding';
 
 interface PageProps {
     params: { nombre: string };
@@ -29,7 +29,7 @@ async function Page({ params }: PageProps) {
 
     const negocio = await buscar(params.nombre);
     if (!negocio) {
-        return <NoEncontrado />;
+        return <NotFoundLanding />;
     }
 
     return (

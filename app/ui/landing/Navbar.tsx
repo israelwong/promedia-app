@@ -50,7 +50,7 @@ function Navbar({ negocio }: NavbarProps) {
                 </div>
             </div>
             {/* Spacer to prevent content from being hidden */}
-            <div className="h-8"></div>
+            <div className="h-16"></div>
         </>
     );
 }

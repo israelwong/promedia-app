@@ -1,13 +1,21 @@
 "use client";
 import { useEffect } from "react";
 
+interface VideoPlayerProps {
+  src: string;
+  autoPlay?: boolean;
+  muted?: boolean;
+  loop?: boolean;
+  controls?: boolean;
+}
+
 function VideoPlayer({
   src,
   autoPlay = true,
   muted = true,
   loop = true,
   controls = false,
-}) {
+}: VideoPlayerProps) {
   useEffect(() => {
     if (typeof document !== "undefined") {
       const videos = document.querySelectorAll("video");
