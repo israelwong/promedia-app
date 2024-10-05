@@ -7,12 +7,10 @@ interface pageProps {
 }
 
 function page( {params}: pageProps ) {
-
   console.log(params);
-  
   return (
     <div>
-      Pasarela de pago
+      Listado de productos
     </div>
   )
 }

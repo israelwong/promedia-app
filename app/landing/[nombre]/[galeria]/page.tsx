@@ -12,6 +12,7 @@ interface pageProps {
 }
 
 async function page({ params }: pageProps) {
+  
   //obtenemos el nombrel del negocio y el nombre de la galeria
   // el parametro nombre se obtiene de la tura dinámica [nombre]/page.tsx
   // el paremero galeria se obtiene de la url dinamica
