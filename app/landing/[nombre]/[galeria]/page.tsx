@@ -1,9 +1,8 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { getGalleryByBussinesAlbum } from '@/lib/actions';
 import Galeria from '@/app/ui/landing/Galeria';
 import NotFoundGaleria from '@/app/ui/landing/galeria/NotFound';
 import BtnCerrar from '@/app/ui/landing/BtnCerrar';
-import Loading from '@/app/ui/landing/galeria/Loading';
 
 interface pageProps {
   params: {
@@ -27,13 +26,11 @@ async function page({ params }: pageProps) {
       <>
         <div>
 
-          <Suspense fallback={<div><Loading /></div>}>
             <Galeria
               urls={album}
               rowHeight={400}
             />
             <BtnCerrar url={`/landing/${negocio}`} />
-          </Suspense>
         </div>
       </>
     );
