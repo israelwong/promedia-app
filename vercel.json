@@ -1,0 +1,15 @@
+{
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/landing/prosocial",
+        "has": [
+          {
+            "type": "host",
+            "value": "prosocial.promedia.mx"
+          }
+        ]
+      }
+    ]
+  }
+  
