@@ -1,10 +1,10 @@
 import React from 'react'
+import Leadform from '@/app/ui/landing/Leadform'
 
 function page() {
+  //Full laadform
   return (
-    <div>
-      leadform
-    </div>
+    <Leadform id_negocio={1} />
   )
 }
 

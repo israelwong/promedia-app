@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ShoppingBag, Share, CreditCard, Grid2X2 } from 'lucide-react';
+import { ShoppingBag, Share2, CreditCard, Grid2X2 } from 'lucide-react';
 
 interface Negocio {
     name: string;
@@ -35,16 +35,16 @@ function Navbar({ negocio }: NavbarProps) {
                     {/* Button Options */}
                     <div className="flex items-center space-x-3">
                         <Link href="/catalogo" className="flex items-center space-x-2">
-                            <Grid2X2 size={26} color="black" />
+                            <Share2 size={20} color="black" />
                         </Link>
-                        <Link href="/catalogo" className="flex items-center space-x-2">
-                            <Share size={26} color="black" />
-                        </Link>
-                        <Link href="/catalogo" className="flex items-center space-x-2">
-                            <CreditCard size={30} color="black" />
+                        <Link href={`${negocio.name}/catalogo`} className="flex items-center space-x-2">
+                            <Grid2X2 size={20} color="black" />
                         </Link>
                         <Link href="/pasarela" className="flex items-center space-x-2">
-                            <ShoppingBag size={24} color="black" />
+                            <ShoppingBag size={20} color="black" />
+                        </Link>
+                        <Link href="/catalogo" className="flex items-center space-x-2">
+                            <CreditCard size={25} color="black" />
                         </Link>
                     </div>
                 </div>

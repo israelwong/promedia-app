@@ -10,7 +10,7 @@ function page( {params}: pageProps ) {
   console.log(params);
   return (
     <div>
-      Listado de productos
+      Grid de productos
     </div>
   )
 }

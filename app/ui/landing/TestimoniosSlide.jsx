@@ -78,13 +78,14 @@ function SlideTestimonios() {
   return (
     <>
       {/*<!-- Component: Testimonial carousel --> */}
-      <div className="glide-testimonios relative w-full overflow-hidden">
+      <div className="glide-testimonios relative w-full overflow-hidden py-10">
         <div data-glide-el="track">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0 pb-12">
             {testimonios.map((testimonio, index) => (
               <li key={index}>
                 <div className="h-full w-full">
-                  <div className="h-full overflow-hidden text-slate-500 border border-slate-500 rounded-md">
+
+                  <div className="h-full overflow-hidden text-gray-800 border border-slate-500 rounded-md">
                     <div className="relative p-6">
                       <figcaption className="flex items-center gap-4 p-3 text-sm text-slate-500">
                         <img
@@ -99,12 +100,13 @@ function SlideTestimonios() {
                         </div>
                       </figcaption>
 
-                      <blockquote className="p-6 text-sm leading-relaxed text-white">
+                      <blockquote className="p-6 text-sm leading-relaxed text-gray-800">
                         <p>{testimonio.msg}</p>
                       </blockquote>
-                      <i className="text-6xl opacity-30 absolute left-6 top-32 z-0 h-16 fas fa-quote-left"></i>
+                      <i className="text-6xl opacity-10 absolute left-6 top-32 z-0 h-16 fas fa-quote-left"></i>
                     </div>
                   </div>
+
                 </div>
               </li>
             ))}
