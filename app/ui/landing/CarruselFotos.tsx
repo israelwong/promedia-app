@@ -3,12 +3,12 @@ import { useEffect } from "react";
 import Glide from "@glidejs/glide";
 import Image from "next/image";
 
-interface SlideFotosProps {
+interface CarruselFotosProps {
   imagenes: string[];
   id: string; // Añadir un identificador único
 }
 
-function SlideFotos({ imagenes, id }: SlideFotosProps) {
+export default function CarruselFotos({ imagenes, id }: CarruselFotosProps) {
 
   useEffect(() => {
     const selector = `.glide-fotos-evento-${id}`;
@@ -55,5 +55,3 @@ function SlideFotos({ imagenes, id }: SlideFotosProps) {
     </div>
   );
 }
-
-export default SlideFotos;

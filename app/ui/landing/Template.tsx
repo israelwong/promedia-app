@@ -2,64 +2,95 @@ import Card from './Card';
 import Faq from './Faq';
 import VideoPlayer from '../components/VideoPlayer';
 import Navbar from './Navbar';
-import SlideFotos from './SlideFotos';
+import CarruselFotos from './CarruselFotos';
 import Link from 'next/link';
 import TestimoniosSlide from './TestimoniosSlide';
 import Leadform from './Leadform';
 import BannerImage from './BannerImage';
-import SidebarButtons from './SidebarButtons';
 import BannerVideo from './BannerVideo';
 import LogosSlider from './LogosSlider';
 import Footer from './Footer';
+import Ubicacion from './Ubicacion';
+import ListaVertical from './ListaVertical';
 
-
-interface Negocio {
-  id: number;
-  name: string;
-  description: string;
-  iconUrl: string;
-  videoUrl?: string;
-  showHero?: boolean;
-  showFaq?: boolean;
-  slide_fotos?: string[];
-  faqs?: {
-    question: string;
-    answer: string;
-  }[];
-  slide_logos?: {
-    titulo: string;
-    url: string;
-  }[],
-  card?: {
-    id: string;
-    hook: string;
-    hook_align: string;
-    cta?: string;
-    cta_align?: string;
-    button_title?: string;
-    button_url?: string;
-    button_align?: string;
+interface NegocioProps {
+  negocio: {
+    id: number;
+    name: string;
+    description: string;
+    correo?: string;
+    telefono?: string;
+    whatsapp?: string;
+    direccion?: string;
+    maps_url?: string;
+    web_url?: string;
+    maps_embed?: string;
+    iconUrl: string;
+    videoUrl?: string;
+    slide_fotos?: string[];
+    social_links?: {
+      name: string;
+      url: string;
+    }[];
+    faqs?: {
+      question: string;
+      answer: string;
+    }[];
+    slide_logos?: {
+      titulo: string;
+      url: string;
+    }[],
+    card?: {
+      id: string;
+      hook: string;
+      hook_align: string;
+      cta?: string;
+      cta_align?: string;
+      button_title?: string;
+      button_url?: string;
+      button_align?: string;
+    },
+    testimonios?: {
+      nombre: string;
+      testimonio: string;
+      foto?: string;
+    }[],
+    lista: {
+      titulo: string;
+      items: {
+        titulo: string;
+        descripcion?:string;
+        icon_type?: string;
+        icon_content?: string;
+      }[];
+    }[],
   }
+
 }
 
-interface Props {
-  negocio: Negocio;
-}
 
-function Template({ negocio }: Props) {
+
+function Template({ negocio }: NegocioProps) {
+
 
   return (
-    <div className="bg-gray-100/50 min-h-screen">
+    <div>
 
-      <Navbar negocio={negocio} />
-      <SidebarButtons />
+    <div className="min-h-screen">
+      <Navbar params={{
+        name:negocio.name,
+        description:negocio.description,
+        iconUrl: negocio.iconUrl
+        }} />
 
-      {/* Footer */}
-      <section>
-      <Footer id={1} />
-      </section>
+         {/* Lista Vertical Section */}
+      {negocio.lista && negocio.lista.length > 0 && (
+        <section>
+          <ListaVertical lista={negocio.lista} />
+        </section>
+      )}
 
-      {/* hero */}
+         {/* hero */}
       <section>
         <Card
           params={{
@@ -74,12 +105,17 @@ function Template({ negocio }: Props) {
           }}
         />
       </section>
-      
-      {/* FAQ */}
+
       <section>
-        <Faq lista={negocio.faqs || []} />
+        <VideoPlayer
+          src={negocio.videoUrl || ''}
+          autoPlay={true}
+          muted={true}
+          loop={true}
+        />
       </section>
 
+      {/* Card */}
       <section>
         <Card
           params={{
@@ -95,11 +131,31 @@ function Template({ negocio }: Props) {
         />
       </section>
 
+
+        {/* slide fotos */}
+        {negocio.slide_fotos && (
+        <section>
+          <CarruselFotos id='casual' imagenes={negocio.slide_fotos} />
+          <div className='text-center py-6'>
+            <Link href={`/landing/${negocio.name}/galeria de fotos casuales`}
+              className='text-center bg-blue-500 text-white p-3 rounded-md'
+            >
+              Mira todas las fotos
+            </Link>
+          </div>
+        </section>
+      )}
+
       {/* Logos Slider */}
       <section>
         <LogosSlider lista={negocio.slide_logos || []} />
       </section>
 
+      {/* FAQ */}
+      <section>
+        <Faq lista={negocio.faqs || []} />
+      </section>
+      
       {/* banner video */}
       <section>
         <BannerVideo
@@ -121,11 +177,8 @@ function Template({ negocio }: Props) {
 
       {/* Suscripcion */}
       {/* Pasarela */}
-      {/* Catalogo */}
-      {/* producto */}
-      {/* botones de contacto flotantes derecha */}
-      {/* botones flotante */}
 
+      {/* Banner image */}
       <section>
         <BannerImage
           params={{
@@ -144,47 +197,40 @@ function Template({ negocio }: Props) {
         />
       </section>
 
-      {/* slide fotos */}
-      {negocio.slide_fotos && (
-        <section>
-          <SlideFotos id='casual' imagenes={negocio.slide_fotos} />
-
-          <div className='text-center py-6'>
-
-            <Link href={`/landing/${negocio.name}/galeria de fotos casuales`}
-              className='text-center bg-blue-500 text-white p-3 rounded-md'
-            >
-              Mira todas las fotos
-            </Link>
-          </div>
-        </section>
-      )}
+    
 
       {/* leadform,  */}
       <section>
         <Leadform id_negocio={negocio.id} />
       </section>
 
-      {/* video plarwe */}
-      {negocio.videoUrl && (
-        <section>
-          <VideoPlayer
-            src={negocio.videoUrl}
-            autoPlay={true}
-            muted={true}
-            loop={true}
-          />
-        </section>
-      )}
-
-
       {/*testimonios */}
       <section>
-        <TestimoniosSlide />
+        <TestimoniosSlide 
+          testimonios={negocio.testimonios}
+        />
       </section>
+
+      <section>
+        <Ubicacion
+          titulo="Estamos en Ojo de Agua, Estado de México"
+          direccion="Cuitláhuac 11, Cuauhtemoc, 55760 Ojo de Agua, Méx."
+          link_share="https://maps.app.goo.gl/Jb9PJLbctEN3tdgV8"
+          iframeSrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.7410204754765!2d-98.98552332374393!3d19.681051281652156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f32d7906e4cb%3A0x6d07d7896c0b89f2!2sProsocial%20Fotograf%C3%ADa%20y%20Video!5e0!3m2!1ses-419!2smx!4v1728259307988!5m2!1ses-419!2smx"
+        />
+      </section>
+
+ {/* Footer */}
+ <section>
+        <Footer 
+          negocio={negocio}
+        />
+      </section>
+    </div>
 
     </div>
   );
 }
+
 
 export default Template;

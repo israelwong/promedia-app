@@ -1,6 +1,17 @@
 import Link from 'next/link';
 
-function SidebarButtons() {
+interface SidebarButtonsProps {
+    paramms:{
+        telefono?: string;
+        whatsapp?: string;
+        correo?: string;
+    }
+}
+
+function SidebarButtons( { paramms }: SidebarButtonsProps) {
+
+    console.log(paramms)
+
     return (
         <div className='mr-5'>
 

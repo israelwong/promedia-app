@@ -15,10 +15,10 @@ export default function LogosSlider({ lista }: LogosSliderProps) {
         <div id="wrap-logos" className="">
 
         
-        <div className="px-0">
+        <div className="px-0 py-5">
         <div className="relative font-inter antialiased">
             <main className="relative flex flex-col justify-center overflow-hidden">
-                <div className="w-full mx-auto px-4 md:px-6 py-10">
+                <div className="w-full mx-auto px-4 md:px-6">
                     <div className="text-center">
                         <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
                             <ul

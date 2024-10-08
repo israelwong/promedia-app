@@ -15,11 +15,11 @@ interface CardProps {
   }
 }
 
-function Hero({ params }: CardProps) {
+export default function Card({ params }: CardProps) {
 
   return (
 
-    <div id={params.id} className='p-5 flex items-center justify-center'>
+    <div id={params.id} className='p-5 flex items-center justify-center  '>
 
       <div className='p-5 space-y-4'>
 
@@ -44,5 +44,3 @@ function Hero({ params }: CardProps) {
     </div>
   )
 }
-
-export default Hero
