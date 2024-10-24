@@ -19,19 +19,19 @@ interface ListaVerticalProps {
 const ListaVertical: React.FC<ListaVerticalProps> = ({ lista }) => {
     return (
         <div className='p-5'>
-        <div className=''>
+        <div className='p-0'>
             {lista.map((listaItem, index) => (
-                <div key={index} className="mb-8">
-                    <h2 className="text-xl font-bold mb-4 text-gray-600">{listaItem.titulo}</h2>
-                    <ul className='grid grid-cols-1'>
+                <div key={index}>
+                    <h2 className="text-primary-foreground text-pink-800 text-xl font-bold mb-4">{listaItem.titulo}</h2>
+                    <ul className=' grid grid-cols-1 gap-1'>
                         {listaItem.items.map((item, idx) => (
-                            <li key={idx} className="mb-4 bg-gray-200 p-3 rounded-md">
+                            <li key={idx} className="mb-4 bg-purple-400 p-3 rounded-md">
                                 {item.icon_content && (
                                     <img src={item.icon_content} alt={item.titulo} className="w-12 h-12 mr-4" />
                                 )}
                                 <div>
-                                    <h3 className="text-md font-semibold">{item.titulo}</h3>
-                                    {item.descripcion && <p className='text-gray-700 text-sm'>{item.descripcion}</p>}
+                                    <h3 className="text-md font-semibold text-foreground">{item.titulo}</h3>
+                                    {item.descripcion && <p className='text-sm text-foreground'>{item.descripcion}</p>}
                                 </div>
                             </li>
                         ))}

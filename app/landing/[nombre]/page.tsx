@@ -1,5 +1,5 @@
 import { getBusinessByName } from '@/lib/actions';
-import Template from '@/app/ui/landing/Template';
+// import Template from '@/app/ui/landing/Template';
 import { generateMetadataFromBusiness } from '@/lib/perfil-metadata';
 import NotFoundLanding from '@/app/ui/landing/NotFoundLanding';
 
@@ -34,7 +34,7 @@ async function Page({ params }: PageProps) {
 
     return (
         <div>
-            <Template negocio={negocio} />
+            {/* <Template negocio={negocio} /> */}
         </div>
     );
 }

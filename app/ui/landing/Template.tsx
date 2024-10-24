@@ -12,6 +12,7 @@ import LogosSlider from './LogosSlider';
 import Footer from './Footer';
 import Ubicacion from './Ubicacion';
 import ListaVertical from './ListaVertical';
+import Acordion from './Acordion';
 
 interface NegocioProps {
   negocio: {
@@ -68,13 +69,11 @@ interface NegocioProps {
 
 }
 
-
-
 function Template({ negocio }: NegocioProps) {
 
 
   return (
-    <div>
+    <div id='template' className=''>
 
     <div className="min-h-screen">
       <Navbar params={{
@@ -89,6 +88,12 @@ function Template({ negocio }: NegocioProps) {
           <ListaVertical lista={negocio.lista} />
         </section>
       )}
+
+      <section>
+        <Acordion 
+          lista={negocio.faqs || []}
+        />
+      </section>
 
          {/* hero */}
       <section>
